@@ -143,6 +143,7 @@ img {
 .header {
   background-color: var(--main-backgroundcolor);
   border-bottom: 1px solid #ececec;
+  height: 80px;
 }
 
 .header .container {
@@ -154,6 +155,7 @@ img {
 .header-nav {
   display: flex;
   align-content: center;
+  height: 80px;
 }
 
 .header-list {
@@ -193,14 +195,24 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color);
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-currentlink {
+  display: flex;
+  flex-direction: column;
   color: var(--accent-color);
   border-bottom: 4px solid var(--accent-color);
 }
+
+/* .header-currentlink::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+} */
+
 
 .header-link:hover,
 .header-link:focus {
@@ -762,6 +774,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 15px;
+  color: var(--main-backgroundcolor);
 }
 
 .footer-email-input::placeholder {
@@ -841,12 +854,23 @@ img {
   fill: currentColor;
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  cursor: pointer;
+}
+
+.modal-close-btn:focus > .modal-close-icon,
+.modal-close-btn:hover > .modal-close-icon {
+  fill: var(--accent-color);
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
   color: var(--main-color);
+  margin-bottom: 12px;
 }
 
 .modal-group-input {
@@ -859,19 +883,20 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   position: relative;
 }
 
 .modal-input-icon {
   position: absolute;
   left: 12px;
-  bottom: 12px;
+  bottom: 30%;
   width: 18px;
   height: 18px;
   fill: var(--main-color);
   transition: 
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  z-index: -1; 
 }
 
 .modal-label-text {
@@ -891,6 +916,7 @@ img {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 10px;
 }
 
 .modal-input::placeholder {
@@ -959,6 +985,7 @@ img {
   line-height: 1.71;
   text-decoration-line: underline;
   color: var(--accent-color);
+  margin-left: 5px;
 }
 
 .modal-submit-btn {

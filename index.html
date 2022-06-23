@@ -426,9 +426,9 @@
         </div>
         <div class="footer-distribution">
           <p class="footer-distribution-title">Подпишитесь на рассылку</p>
-          <form action="add-email-send" class="footer-distribution-form">
+          <form  class="footer-distribution-form">
           <label class="footer-distribution-email-text">
-            <input type="email" name="add-email-to-distribution" placeholder="E-mail" class="footer-email-input">
+            <input type="email" name="add-email-to-distribution" placeholder="E-mail" class="footer-email-input" required>
           </label>
           <button type="submit" class="btn-fixed footer-add-email-btn">
             Подписаться
@@ -448,16 +448,16 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <div class="modal-group-input">
-          <label class="modal-label"><p class="modal-label-text">Имя</p><input type="text" name="visitor-name" class="modal-input"
+        <form  class="modal-group-input">
+          <label class="modal-label"><p class="modal-label-text">Имя</p><input type="text" name="visitor-name" class="modal-input" required
             ><svg class="modal-input-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-person"></use>
           </svg></label>
-          <label class="modal-label"><p class="modal-label-text">Телефон</p><input type="tel" name="visitor-tel" class="modal-input"
+          <label class="modal-label"><p class="modal-label-text">Телефон</p><input type="tel" name="visitor-tel" class="modal-input" required
             ><svg class="modal-input-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg></label>
-          <label class="modal-label"><p class="modal-label-text">Почта</p><input type="email" name="visitor-email" class="modal-input"
+          <label class="modal-label"><p class="modal-label-text">Почта</p><input type="email" name="visitor-email" class="modal-input" required
             ><svg class="modal-input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg></label>
@@ -465,9 +465,9 @@
           <textarea name="modal-comment" id="modal-comment" placeholder="Введите текст" class="modal-input modal-textarea"></textarea>
           <label class="modal-label-check"><input type="checkbox" name="visitor-agreement" value="agreement" class="modal-input-chek"><svg class="modal-check-icon" width="16" height="15">
             <use href="./images/icons.svg#icon-check"></use>
-          </svg><p class="modal-check-text">Соглашаюсь с рассылкой и принимаю </p><a href="" target="_blank" rel="noreferrer nofollow noopener" title="Условия договора" class="modal-link-agreement link">Условия договора</a></label>
+          </svg><p class="modal-check-text">Соглашаюсь с рассылкой и принимаю</p><a href="" target="_blank" rel="noreferrer nofollow noopener" title="Условия договора" class="modal-link-agreement link">Условия договора</a></label>
           <button type="submit" class="modal-submit-btn btn-fixed">Отправить</button>
-        </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
