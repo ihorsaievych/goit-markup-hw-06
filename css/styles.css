@@ -882,15 +882,20 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
+}
+
+.modal-input-centre {
   position: relative;
+  padding: 12px 0px;
+  margin-bottom: 10px;
 }
 
 .modal-input-icon {
   position: absolute;
   left: 12px;
-  bottom: 30%;
-  width: 18px;
-  height: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+
   fill: var(--main-color);
   transition: 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
@@ -901,20 +906,19 @@ img {
   margin-bottom: 4px;
 }
 
+
 .modal-input {
   height: 40px;
   width: 100%;
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 12px;
   padding-left: 42px;
-  outline-color:inherit
+  outline-color:inherit;
   transition: 
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 10px;
+ 
 }
 
 .modal-input::placeholder {
@@ -954,17 +958,18 @@ img {
   margin-right: 7px;
   fill: transparent;
   border: 1px solid var(--main-color);
+  border-radius: 2px;
   transition: 
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input-chek {
+/* .modal-input-chek {
   position: absolute;
   z-index: -9999;
   opacity: 0;
-}
+} */
 
 .modal-input-chek:checked~.modal-check-icon {
   fill: var(--main-backgroundcolor);
